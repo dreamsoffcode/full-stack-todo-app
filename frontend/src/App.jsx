@@ -6,7 +6,7 @@ import './App.css'
  function App() {
 
   async function fetchData(){
-    const res = await fetch('http://localhost:3000/todos')
+    const res = await fetch('https://full-stack-todo-app-backend-blue.vercel.app/todos')
     const resObj = await res.json()
     return resObj.todos
   }

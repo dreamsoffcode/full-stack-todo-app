@@ -4,7 +4,7 @@ export default function CreateTodo(){
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('')
     function addTodo(){
-        fetch('http://localhost:3000/todo', {
+        fetch('https://full-stack-todo-app-backend-blue.vercel.app/todo', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

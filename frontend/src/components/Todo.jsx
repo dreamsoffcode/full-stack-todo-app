@@ -2,7 +2,7 @@ export default function Todo(props){
     const {todo, todos, setTodos} = props
     function markComplete(event){
         todo.completed = event.target.checked
-        fetch('http://localhost:3000/completed', {
+        fetch('https://full-stack-todo-app-backend-blue.vercel.app/completed', {
             method: "PUT",
             headers: {
                 "content-type": "application/json"
