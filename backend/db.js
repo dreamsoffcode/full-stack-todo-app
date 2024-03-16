@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect(DB_STRING)
+mongoose.connect(process.env.DB_STRING)
 
 const todoSchema = new mongoose.Schema({
   title: String,
