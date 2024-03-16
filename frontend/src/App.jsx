@@ -15,7 +15,7 @@ import './App.css'
 
   //leads to infinite fetc requests
   useEffect(()=>{
-    fetchData().then(responseTodos=>setTodos(responseTodos))
+    setInterval(()=>fetchData().then(responseTodos=>setTodos(responseTodos)), 5000)
   }, [])
   
 
